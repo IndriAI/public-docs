@@ -1,8 +1,8 @@
 # IndriU Documentation
 
 The IndriU (Indri Universal) library is available to all supported languages. It provides a set of `say` functions for
- sending plain or formatted output (CSS attributes, HTML or Markdown) to the Output view, and a set of `ask` functions
- for getting input from the user via a dialog box.
+sending plain or formatted output (CSS attributes, HTML or Markdown) to the Output view, and a set of `ask` functions
+for getting input from the user via a dialog box.
 
 ## Table of Contents
 
@@ -51,16 +51,17 @@ The IndriU (Indri Universal) library is available to all supported languages. It
 
 ## Say Functions <a name="say-functions"></a>
 
-### say  <a name="say"></a> 
+### say  <a name="say"></a>
 
 Sends a text-based message to the client.
 
-` say(value: string, format?: SayFormat | string): void `
+`say(value: string, format?: SayFormat | string): void`
 
 - `value`: The text to be sent to the client.
 - `format`: Optional. The format of the text. See [SayFormat](#sayformat).
 
 Example Usage:
+
 ```js
 say('hello')
 say('hello', { color: 'red' })
@@ -76,6 +77,7 @@ Sends an HTML-based message to the client.
 - `htmlString`: The HTML string to be sent to the client.
 
 Example Usage:
+
 ```js
 sayHTML('<span style="color: red">hello</span>')
 ```
@@ -90,8 +92,6 @@ Properties for formatting text messages.
 
 This can also be used as a stringify version of the format object.
 
-## Ask
-
 ## Ask Functions  <a name="ask-functions"></a>
 
 ### ask  <a name="ask"></a>
@@ -99,14 +99,16 @@ This can also be used as a stringify version of the format object.
 Opens an input-based dialog and returns the input value.
 
 `ask(text: string, props?: AskProps): Promise<string>`
+
 - `text`: The text to display in the dialog.
 - `props`: Configuration properties for the dialog (optional). See [AskProps](#askprops).
 
-Example Usage: 
+Example Usage:
 
 `ask(text, { title: "Personal Info", description: "Change your first name", showCancel: true })`
 
 ### askAsync  <a name="askasync"></a>
+
 Opens an input-based dialog and asynchronously handles the input value.
 
 `askAsync(text: string, action: AskCallback, props?: AskProps): void`
@@ -115,7 +117,7 @@ Opens an input-based dialog and asynchronously handles the input value.
 - `action`: Callback function to handle the input value. See [AskCallback](#askcallback).
 - `props`: Configuration properties for the dialog (optional). See [AskProps](#askprops).
 
-Example Usage: 
+Example Usage:
 
 `askAsync("First Name", (value) => setFirstName(value), { title: "Personal Info", description: "Change your first name", showCancel: true })`
 
@@ -142,7 +144,7 @@ Opens a boolean-based dialog and asynchronously handles the boolean value.
 - `action`: Callback function to handle the boolean value. See [AskCallback](#askcallback).
 - `props`: Configuration properties for the dialog (optional). See [AskProps](#askprops).
 
-Example Usage: 
+Example Usage:
 
 `askBooleanAsync("Close window?", (value) => closeWindow(value), { title: "Confirm", description: "This window has unsaved changes", showCancel: false })`
 
@@ -155,7 +157,7 @@ Opens a confirmation dialog and returns the boolean value.
 - `text`: The text to display in the dialog.
 - `props`: Configuration properties for the dialog (optional). See [AskConfirm](#interfaces).
 
-Example Usage: 
+Example Usage:
 
 `const close = await askConfirm("Close window?", { description: "This window has unsaved changes", showCancel: false })`
 
@@ -169,7 +171,7 @@ Opens a confirmation dialog and asynchronously handles the boolean value.
 - `action`: Callback function to handle the confirmation result. See [AskCallback](#askcallback).
 - `props`: Configuration properties for the dialog (optional). See [AskConfirm](#interfaces).
 
-Example Usage: 
+Example Usage:
 
 `askConfirmAsync("Close window?", (value) => closeWindow(value), { description: "This window has unsaved changes", showCancel: true})`:
 
@@ -251,7 +253,8 @@ ask(text: str, title: str = None, description: str = None, showCancel: bool = Fa
 - Returns: The user's input as a string.
 
 Example Usage:
-```
+
+```python
 ask("First Name", title="Personal Info", description="Change your first name", showCancel=True).then(lambda resp: say(resp))
 ```
 
@@ -271,6 +274,7 @@ askAsync(text: str, action: AskCallback, title: str = None, description: str = N
 - `showCancel`: Optional. Whether to show a cancel option. Default is `False`.
 
 Example Usage:
+
 ```python
 def callback(value):
     say(value)
@@ -294,6 +298,7 @@ askBoolean(text: str, title: str = None, description: str = None, showCancel: bo
 - Returns: The user's response as a boolean.
 
 Example Usage:
+
 ```python
 askBoolean("Close window?", title="Confirm", description="This window has unsaved changes", showCancel=False).then(lambda resp: say(resp))
 ```
@@ -314,6 +319,7 @@ askBooleanAsync(text: str, action: AskCallback, title: str = None, description: 
 - `showCancel`: Optional. Whether to show a cancel option. Default is `False`.
 
 Example Usage:
+
 ```python
 def callback(value):
     say(value)
@@ -335,6 +341,7 @@ askConfirm(text: str, title: str = None, description: str = None, showCancel: bo
 - Returns: The user's response as a boolean.
 
 Example Usage:
+
 ```python
 askConfirm("Close window?", description="This window has unsaved changes", showCancel=False).then(lambda resp: say(resp))
 ```
@@ -354,6 +361,7 @@ askConfirmAsync(text: str, action: AskCallback, title: str = None, description: 
 - `showCancel`: Optional. Whether to show a cancel option. Default is `False`.
 
 Example Usage:
+
 ```python
 def callback(value):
     say(value)
@@ -375,6 +383,7 @@ askCancel(text: str, title: str = None, description: str = None, showCancel: boo
 - Returns: The user's response as a boolean.
 
 Example Usage:
+
 ```python
 askCancel("Close window?", description="This window has unsaved changes", showCancel=False).then(lambda resp: say(resp))
 ```
@@ -394,6 +403,7 @@ askCancelAsync(text: str, action: AskCallback, title: str = None, description: s
 - `showCancel`: Optional. Whether to show a cancel option. Default is `False`.
 
 Example Usage:
+
 ```python
 def callback(value):
     say(value)
