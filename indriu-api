@@ -80,7 +80,7 @@ say('hello', { fontStyle: 'italic' })
 say('hello', { color: 'red', fontWeight: 'bold', fontStyle: 'italic' })
 ```
 
-#### sayHTML  <a name="sayhtml"></a>
+##### sayHTML  <a name="sayhtml"></a>
 
 Sends an HTML-based message to the client.
 
@@ -92,7 +92,7 @@ Example Usage:
 sayHTML('<span style="color: red">hello</span>')
 ```
 
-#### Say Format  <a name="sayformat"></a>
+##### Say Format  <a name="sayformat"></a>
 
 Properties for formatting text messages.
 
@@ -385,7 +385,7 @@ Example Usage:
 ```python
 def callback(value):
     say(value)
-    
+
 askConfirmAsync("Close window?", callback, description="This window has unsaved changes", showCancel=False)
 ```
 
