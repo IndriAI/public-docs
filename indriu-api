@@ -14,16 +14,16 @@ for getting input from the user via a dialog box.
 
 ## Table of Contents
 
-## TypeScript
+### TypeScript
 
-### Say
+#### Say
 
 - [Functions](#say-functions)
   - [say](#say)
   - [sayHTML](#sayhtml)
 - [Format](#sayformat)
 
-### Ask
+#### Ask
 
 - [Functions](#ask-functions)
   - [ask](#ask)
@@ -39,14 +39,14 @@ for getting input from the user via a dialog box.
   - [AskConfirm](#type-askconfirm)
   - [AskCancel](#type-askcancel)
 
-## Python
+### Python
 
-### Say
+#### Say
 
 - [say](#python-say)
 - [sayHTML](#python-sayhtml)
 
-### Ask
+#### Ask
 
 - [ask](#python-ask)
 - [askAsync](#python-askasync)
@@ -57,9 +57,11 @@ for getting input from the user via a dialog box.
 - [askCancel](#python-askcancel)
 - [askCancelAsync](#python-askcancelasync)
 
-## Say Functions <a name="say-functions"></a>
+### TypeScript
 
-### say  <a name="say"></a>
+#### Say Functions <a name="say-functions"></a>
+
+##### say  <a name="say"></a>
 
 Sends a text-based message to the client.
 
@@ -78,7 +80,7 @@ say('hello', { fontStyle: 'italic' })
 say('hello', { color: 'red', fontWeight: 'bold', fontStyle: 'italic' })
 ```
 
-### sayHTML  <a name="sayhtml"></a>
+#### sayHTML  <a name="sayhtml"></a>
 
 Sends an HTML-based message to the client.
 
@@ -90,7 +92,7 @@ Example Usage:
 sayHTML('<span style="color: red">hello</span>')
 ```
 
-## Say Format  <a name="sayformat"></a>
+#### Say Format  <a name="sayformat"></a>
 
 Properties for formatting text messages.
 
@@ -100,9 +102,9 @@ Properties for formatting text messages.
 
 This can also be used as a stringify version of the format object.
 
-## Ask Functions  <a name="ask-functions"></a>
+#### Ask Functions  <a name="ask-functions"></a>
 
-### ask  <a name="ask"></a>
+##### ask  <a name="ask"></a>
 
 Opens an input-based dialog and returns the input value.
 
@@ -113,9 +115,11 @@ Opens an input-based dialog and returns the input value.
 
 Example Usage:
 
-`ask(text, { title: "Personal Info", description: "Change your first name", showCancel: true })`
+```TypeScript
+ask(text, { title: "Personal Info", description: "Change your first name", showCancel: true });
+```
 
-### askAsync  <a name="askasync"></a>
+##### askAsync  <a name="askasync"></a>
 
 Opens an input-based dialog and asynchronously handles the input value.
 
@@ -127,9 +131,11 @@ Opens an input-based dialog and asynchronously handles the input value.
 
 Example Usage:
 
-`askAsync("First Name", (value) => setFirstName(value), { title: "Personal Info", description: "Change your first name", showCancel: true })`
+```TypeScript
+askAsync("First Name", (value) => setFirstName(value), { title: "Personal Info", description: "Change your first name", showCancel: true })
+```
 
-### askBoolean  <a name="askboolean"></a>
+##### askBoolean  <a name="askboolean"></a>
 
 Opens a boolean-based dialog and returns the boolean value.
 
@@ -140,9 +146,11 @@ Opens a boolean-based dialog and returns the boolean value.
 
 Example Usage:
 
-`const close = await askBoolean("Close window?", { title: "Confirm", description: "This window has unsaved changes", showCancel: false })`
+```TypeScript
+const close = await askBoolean("Close window?", { title: "Confirm", description: "This window has unsaved changes", showCancel: false })
+```
 
-### askBooleanAsync  <a name="askbooleanasync"></a>
+##### askBooleanAsync  <a name="askbooleanasync"></a>
 
 Opens a boolean-based dialog and asynchronously handles the boolean value.
 
@@ -154,9 +162,11 @@ Opens a boolean-based dialog and asynchronously handles the boolean value.
 
 Example Usage:
 
-`askBooleanAsync("Close window?", (value) => closeWindow(value), { title: "Confirm", description: "This window has unsaved changes", showCancel: false })`
+```TypeScript
+askBooleanAsync("Close window?", (value) => closeWindow(value), { title: "Confirm", description: "This window has unsaved changes", showCancel: false });
+```
 
-### askConfirm  <a name="askconfirm"></a>
+##### askConfirm  <a name="askconfirm"></a>
 
 Opens a confirmation dialog and returns the boolean value.
 
@@ -167,9 +177,11 @@ Opens a confirmation dialog and returns the boolean value.
 
 Example Usage:
 
-`const close = await askConfirm("Close window?", { description: "This window has unsaved changes", showCancel: false })`
+```TypeScript
+const close = await askConfirm("Close window?", { description: "This window has unsaved changes", showCancel: false });
+```
 
-### askConfirmAsync  <a name="askconfirmasync"></a>
+##### askConfirmAsync  <a name="askconfirmasync"></a>
 
 Opens a confirmation dialog and asynchronously handles the boolean value.
 
@@ -181,11 +193,13 @@ Opens a confirmation dialog and asynchronously handles the boolean value.
 
 Example Usage:
 
-`askConfirmAsync("Close window?", (value) => closeWindow(value), { description: "This window has unsaved changes", showCancel: true})`:
+```TypeScript
+askConfirmAsync("Close window?", (value) => closeWindow(value), { description: "This window has unsaved changes", showCancel: true});
+```
 
-## Ask Interfaces  <a name="ask-interfaces"></a>
+#### Ask Interfaces  <a name="ask-interfaces"></a>
 
-### AskProps  <a name="askprops"></a>
+##### AskProps  <a name="askprops"></a>
 
 Properties for configuring dialog behavior.
 
@@ -193,27 +207,27 @@ Properties for configuring dialog behavior.
 - `description`: Optional. The description of the dialog.
 - `showCancel`: Optional. Whether to show a cancel option. Default is `false`.
 
-## Ask Types
+#### Ask Types
 
-### AskCallback  <a name="type-askcallback"></a>
+##### AskCallback  <a name="type-askcallback"></a>
 
 Callback function for handling dialog responses.
 
 - `value`: The value obtained from the dialog.
 
-### AskConfirm  <a name="type-askconfirm"></a>
+##### AskConfirm  <a name="type-askconfirm"></a>
 
 Type representing properties for a confirmation dialog.
 
-### AskCancel  <a name="type-askcancel"></a>
+##### AskCancel  <a name="type-askcancel"></a>
 
 Type representing properties for a cancellation dialog.
 
-## Python
+### Python
 
-## Functions
+#### Say Functions
 
-### say <a name="python-say"></a>
+##### say <a name="python-say"></a>
 
 Sends a text-based message to the client.
 
@@ -224,13 +238,14 @@ Sends a text-based message to the client.
 - Returns: The sent text as a string.
 
 Example Usage:
+
 ```python
 say('hello')
 say('hello', { 'color': 'red' })
 say('hello', dict(color='red'))
 ```
 
-### sayHTML <a name="python-sayhtml"></a>
+##### sayHTML <a name="python-sayhtml"></a>
 
 Sends an HTML-based message to the client.
 
@@ -245,13 +260,14 @@ Example Usage:
 sayHTML('<span style="color: red">hello</span>')
 ```
 
-### ask <a name="python-ask"></a>
+#### Ask Functions
+
+##### ask <a name="python-ask"></a>
 
 Opens a dialog and returns the user's input asynchronously.
 
 ```python
 ask(text: str, title: str = None, description: str = None, showCancel: bool = False) -> str
-
 ```
 
 - `text`: The text to display in the dialog.
@@ -266,13 +282,12 @@ Example Usage:
 ask("First Name", title="Personal Info", description="Change your first name", showCancel=True).then(lambda resp: say(resp))
 ```
 
-### askAsync <a name="python-askasync"></a>
+##### askAsync <a name="python-askasync"></a>
 
 Opens a dialog and asynchronously handles the user's input.
 
 ```python
 askAsync(text: str, action: AskCallback, title: str = None, description: str = None, showCancel: bool = False) -> None
-
 ```
 
 - `text`: The text to display in the dialog.
@@ -290,13 +305,12 @@ def callback(value):
 askAsync("First Name", callback, title="Personal Info", description="Change your first name", showCancel=True)
 ```
 
-### askBoolean <a name="python-askboolean"></a>
+##### askBoolean <a name="python-askboolean"></a>
 
 Opens a boolean dialog and returns the user's response.
 
 ```python
 askBoolean(text: str, title: str = None, description: str = None, showCancel: bool = False) -> bool
-
 ```
 
 - `text`: The text to display in the dialog.
@@ -311,13 +325,12 @@ Example Usage:
 askBoolean("Close window?", title="Confirm", description="This window has unsaved changes", showCancel=False).then(lambda resp: say(resp))
 ```
 
-### askBooleanAsync <a name="python-askbooleanasync"></a>
+##### askBooleanAsync <a name="python-askbooleanasync"></a>
 
 Opens a boolean dialog and asynchronously handles the user's response.
 
 ```python
 askBooleanAsync(text: str, action: AskCallback, title: str = None, description: str = None, showCancel: bool = False) -> None
-
 ```
 
 - `text`: The text to display in the dialog.
@@ -331,16 +344,16 @@ Example Usage:
 ```python
 def callback(value):
     say(value)
+
 askBooleanAsync("Close window?", callback, title="Confirm", description="This window has unsaved changes", showCancel=False)
 ```
 
-### askConfirm <a name="python-askconfirm"></a>
+##### askConfirm <a name="python-askconfirm"></a>
 
 Opens a confirmation dialog and returns the user's response.
 
 ```python
 askConfirm(text: str, title: str = None, description: str = None, showCancel: bool = False) -> bool
-
 ```
 
 - `text`: The text to display in the dialog.
@@ -354,13 +367,12 @@ Example Usage:
 askConfirm("Close window?", description="This window has unsaved changes", showCancel=False).then(lambda resp: say(resp))
 ```
 
-### askConfirmAsync <a name="python-askconfirmasync"></a>
+##### askConfirmAsync <a name="python-askconfirmasync"></a>
 
 Opens a confirmation dialog and asynchronously handles the user's response.
 
 ```python
 askConfirmAsync(text: str, action: AskCallback, title: str = None, description: str = None, showCancel: bool = False) -> None
-
 ```
 
 - `text`: The text to display in the dialog.
@@ -373,16 +385,16 @@ Example Usage:
 ```python
 def callback(value):
     say(value)
+    
 askConfirmAsync("Close window?", callback, description="This window has unsaved changes", showCancel=False)
 ```
 
-### askCancel <a name="python-askcancel"></a>
+##### askCancel <a name="python-askcancel"></a>
 
 Opens a cancellation dialog and returns the user's response.
 
 ```python
 askCancel(text: str, title: str = None, description: str = None, showCancel: bool = False) -> bool
-
 ```
 
 - `text`: The text to display in the dialog.
@@ -396,13 +408,12 @@ Example Usage:
 askCancel("Close window?", description="This window has unsaved changes", showCancel=False).then(lambda resp: say(resp))
 ```
 
-### askCancelAsync <a name="python-askcancelasync"></a>
+##### askCancelAsync <a name="python-askcancelasync"></a>
 
 Opens a cancellation dialog and asynchronously handles the user's response.
 
 ```python
 askCancelAsync(text: str, action: AskCallback, title: str = None, description: str = None, showCancel: bool = False) -> None
-
 ```
 
 - `text`: The text to display in the dialog.
@@ -415,5 +426,6 @@ Example Usage:
 ```python
 def callback(value):
     say(value)
+
 askCancelAsync("Close window?", callback, description="This window has unsaved changes", showCancel=False)
 ```
