@@ -4,14 +4,6 @@ The IndriU (Indri Universal) library is available to all supported languages. It
 sending plain or formatted output (CSS attributes, HTML or Markdown) to the Output view, and a set of `ask` functions
 for getting input from the user via a dialog box.
 
-## H2
-
-### H3
-
-#### H4
-
-##### H5
-
 ## Table of Contents
 
 ### TypeScript
@@ -72,7 +64,7 @@ Sends a text-based message to the client.
 
 Example Usage:
 
-```js
+```typescript
 say('hello')
 say('hello', { color: 'red' })
 say('hello', { fontWeight: 'bold' })
@@ -88,7 +80,7 @@ Sends an HTML-based message to the client.
 
 Example Usage:
 
-```js
+```typescript
 sayHTML('<span style="color: red">hello</span>')
 ```
 
@@ -115,7 +107,7 @@ Opens an input-based dialog and returns the input value.
 
 Example Usage:
 
-```TypeScript
+```typescript
 ask(text, { title: "Personal Info", description: "Change your first name", showCancel: true });
 ```
 
@@ -131,7 +123,7 @@ Opens an input-based dialog and asynchronously handles the input value.
 
 Example Usage:
 
-```TypeScript
+```typescript
 askAsync("First Name", (value) => setFirstName(value), { title: "Personal Info", description: "Change your first name", showCancel: true })
 ```
 
@@ -146,7 +138,7 @@ Opens a boolean-based dialog and returns the boolean value.
 
 Example Usage:
 
-```TypeScript
+```typescript
 const close = await askBoolean("Close window?", { title: "Confirm", description: "This window has unsaved changes", showCancel: false })
 ```
 
@@ -162,7 +154,7 @@ Opens a boolean-based dialog and asynchronously handles the boolean value.
 
 Example Usage:
 
-```TypeScript
+```typescript
 askBooleanAsync("Close window?", (value) => closeWindow(value), { title: "Confirm", description: "This window has unsaved changes", showCancel: false });
 ```
 
@@ -177,7 +169,7 @@ Opens a confirmation dialog and returns the boolean value.
 
 Example Usage:
 
-```TypeScript
+```typescript
 const close = await askConfirm("Close window?", { description: "This window has unsaved changes", showCancel: false });
 ```
 
@@ -193,7 +185,7 @@ Opens a confirmation dialog and asynchronously handles the boolean value.
 
 Example Usage:
 
-```TypeScript
+```typescript
 askConfirmAsync("Close window?", (value) => closeWindow(value), { description: "This window has unsaved changes", showCancel: true});
 ```
 
