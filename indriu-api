@@ -199,7 +199,7 @@ Properties for configuring dialog behavior.
 - `description`: Optional. The description of the dialog.
 - `showCancel`: Optional. Whether to show a cancel option. Default is `false`.
 
-#### Ask Types
+#### Ask Types <a name="ask-types"></a>
 
 ##### AskCallback  <a name="type-askcallback"></a>
 
