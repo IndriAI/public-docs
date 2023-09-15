@@ -92,7 +92,7 @@ Example Usage:
 sayHTML('<span style="color: red">hello</span>')
 ```
 
-##### Say Format  <a name="sayformat"></a>
+#### Say Format  <a name="sayformat"></a>
 
 Properties for formatting text messages.
 
