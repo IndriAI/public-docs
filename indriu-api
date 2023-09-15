@@ -4,7 +4,7 @@ The IndriU (Indri Universal) library is available to all supported languages. It
  sending plain or formatted output (CSS attributes, HTML or Markdown) to the Output view, and a set of `ask` functions
  for getting input from the user via a dialog box.
 
-## Table of Contents
+## Table of Contents...
 
 ## Typescript
 
