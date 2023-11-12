@@ -57,3 +57,16 @@ You can import libraries and access packages/namespaces supported by the languag
 > print(os.name)
 posix
 ```
+
+You can import a file from a folder within the CodeLet like so:
+Note: This example runs in the editor.
+
+```
+# Here we import the greetES function from the spanish.py file in 
+# the greetings folder.
+
+from greetings.spanish import greetES
+
+greetES() # output "Hola 🎉"
+```
+
