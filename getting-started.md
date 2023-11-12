@@ -50,7 +50,7 @@ CodeLets can be embedded as web components in any web page. Settings allow you t
 
 CodeLets currently support [Python](https://www.python.org) and [TypeScript](https://www.typescriptlang.org). [Swift](https://www.swift.org) and [Kotlin](https://kotlinlang.org/) will be included in the next major release.
 
-You can import libraries and access packages/namespaces supported by the language you are using. For example, you import `os` from Python like so:
+You can import libraries and access packages/namespaces supported by the language you are using. Here is an example of importing 'os' in Python using the Console:
 
 ```
 > import os
@@ -58,13 +58,9 @@ You can import libraries and access packages/namespaces supported by the languag
 posix
 ```
 
-You can import a file from a folder within the CodeLet like so:
-Note: This example runs in the editor.
+Here is another Python example of importing the greetES function from a file called spanish.py in the geetings folder. This time we use the Editor.
 
 ```
-# Here we import the greetES function from the spanish.py file in 
-# the greetings folder.
-
 from greetings.spanish import greetES
 
 greetES() # output "Hola 🎉"
