@@ -66,3 +66,4 @@ from greetings.spanish import greetES
 greetES() # output "Hola 🎉"
 ```
 
+*Note: If spanish.py is in the root you can simply write* `from spanish import greetES`.
