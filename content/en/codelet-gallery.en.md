@@ -10,6 +10,7 @@
 * [Python dir Import](https://codelet.indri.ai/CodeLet-Gallery/py-dir-import)
 * [Python Ask](https://codelet.indri.ai/CodeLet-Gallery/py_ask)
 * [Vollib Demo](https://codelet.indri.ai/codelet-gallery/vollib-demo)
+* [Embedded Vollib Demo &amp; Playground](https://vollib.org) (Scroll to bottom)
 
 ## TypeScript Examples
 
@@ -17,3 +18,4 @@
 * [Fibonacci TS](https://codelet.indri.ai/CodeLet-Gallery/fibonacci-ts-v2)
 * [TypeScript Load JSON](https://codelet.indri.ai/CodeLet-Gallery/ts-load-json)
 * [TypeScript Ask](https://codelet.indri.ai/CodeLet-Gallery/ts-ask)
+
