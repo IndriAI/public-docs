@@ -39,7 +39,7 @@ say("🥷🦎🪼", dict(
 
 sayHTML("<img src='https://ikayzo.com/assets/stamp-about.png'/>")
 ```
-![Say Output](say-output.png)
+![Say Output](https://raw.githubusercontent.com/IndriAI/public-docs/main/content/en/say-output.png)
 
 
 ## Sharing
