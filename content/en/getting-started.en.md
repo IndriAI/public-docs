@@ -54,7 +54,7 @@ CodeLets currently support [Python](https://www.python.org) and [TypeScript](htt
 
 You can import libraries and access packages/namespaces supported by the language you are using. Here is an example of importing 'os' in Python using the Console:
 
-```
+```python
 > import os
 > print(os.name)
 posix
@@ -62,10 +62,16 @@ posix
 
 Here is another Python example of importing the greetES function from a file called spanish.py in the geetings folder. This time we use the Editor.
 
-```
+```python
 from greetings.spanish import greetES
 
 greetES() # output "Hola 🎉"
 ```
 
 *Note: If spanish.py is in the root you can simply write* `from spanish import greetES`.
+
+## White Labeling CodeLets
+
+CodeLet title bar colors can be specified in the URL like so: https://codelet.indri.ai/CodeLet-Gallery/vollib-demo?theme-primary=%235ba94a&theme-secondary=%230a7099
+
+We will be adding the ability to change the watermark logo in the lower right corner in the near future.
