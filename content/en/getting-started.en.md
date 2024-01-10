@@ -24,7 +24,7 @@ The *Output* is used similar to system out, but it supports rich media. You can 
 
 **Example**
 
-```
+```python
 say("日本語", dict(
     fontSize="28pt",
     fontWeight="bold",
