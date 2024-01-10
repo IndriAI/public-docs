@@ -39,6 +39,8 @@ say("🥷🦎🪼", dict(
 
 sayHTML("<img src='https://ikayzo.com/assets/stamp-about.png'/>")
 ```
+![Say Output](say-output.png)
+
 
 ## Sharing
 
