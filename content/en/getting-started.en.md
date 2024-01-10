@@ -22,7 +22,8 @@ After code in the Editor has been evaluated with the **Run** button (upper right
 
 The *Output* is used similar to system out, but it supports rich media. You can print to it from the Editor using `print(...)` and from the Editor or Console using the "say" command, which is available in all supported languages.
 
-**Example**
+
+**Python Example**
 
 ```python
 say("日本語", dict(
