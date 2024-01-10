@@ -11,6 +11,7 @@
 * [Python Ask](https://codelet.indri.ai/CodeLet-Gallery/py_ask)
 * [Vollib Demo](https://codelet.indri.ai/codelet-gallery/vollib-demo)
 * [Embedded Vollib Demo &amp; Playground](https://vollib.org/index.html#codelet-area)
+* [Calling an External API](https://codelet.indri.ai/CodeLet-Gallery/call-api-py)
 
 ## TypeScript Examples
 
