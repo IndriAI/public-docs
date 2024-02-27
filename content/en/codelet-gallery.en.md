@@ -28,3 +28,5 @@
 
 * [Fibonacci Sequence](https://codelet.indri.ai/CodeLet-Gallery/fibonacci-kt)
 * [Kotlin Ask](https://codelet.indri.ai/CodeLet-Gallery/kt-ask)
+* [When Expression](https://codelet.indri.ai/CodeLet-Gallery/when-kt)
+  
