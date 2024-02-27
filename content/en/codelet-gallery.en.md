@@ -24,6 +24,6 @@
 * [TypeScript Load JSON](https://codelet.indri.ai/CodeLet-Gallery/ts-load-json)
 * [TypeScript Ask](https://codelet.indri.ai/CodeLet-Gallery/ts-ask)
 
-## Kotlin Examples
+## Kotlin (beta) Examples
 
 * [Fibonacci Sequence](https://codelet.indri.ai/CodeLet-Gallery/fibonacci-kt)
