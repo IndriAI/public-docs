@@ -2,7 +2,7 @@
 
 ## List of links
 
-* [Python Import]({CODELET_DOMAIN}/CodeLet-Gallery/py_import)
+* [Python Import]({CODELET_APP_DOMAIN}/CodeLet-Gallery/py_import)
 * [Fibonacci Sequence]({CODELET_DOMAIN}/CodeLet-Gallery/fibonacci-v2)
 * [Dictionary Merge]({CODELET_DOMAIN}/CodeLet-Gallery/dict-merge)
 * [Comprehensions]({CODELET_DOMAIN}/CodeLet-Gallery/comprehensions)
