@@ -2,7 +2,7 @@
 
 ## Python Examples
 
-* [Python Import](/codelet-gallery/py_import)
+* [Python Import](https://codelet.indri.ai/CodeLet-Gallery/py_import)
 * [Fibonacci Sequence](https://codelet.indri.ai/CodeLet-Gallery/fibonacci-v2)
 * [Dictionary Merge](https://codelet.indri.ai/CodeLet-Gallery/dict-merge)
 * [Comprehensions](https://codelet.indri.ai/CodeLet-Gallery/comprehensions)
