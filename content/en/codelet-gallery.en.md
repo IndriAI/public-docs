@@ -14,7 +14,7 @@
 * [Vollib Demo](https://codelet.indriai.com/codelet-gallery/vollib-demo)
 * [Embedded Vollib Demo &amp; Playground](https://vollib.org/index.html#codelet-area)
 <!---
-* [Calling an External API](https://codelet.indri.ai/CodeLet-Gallery/call-api-py)
+* [Calling an External API]({CODELET_APP_DOMAIN}/CodeLet-Gallery/call-api-py)
 --->
 
 ## TypeScript Examples
