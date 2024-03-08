@@ -1,5 +1,7 @@
 # Test file
 
+<p>{CODELET_APP_DOMAIN}</p>
+
 ## List of links
 
 * [Python Import]({CODELET_APP_DOMAIN}/CodeLet-Gallery/py_import)
