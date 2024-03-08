@@ -75,3 +75,5 @@ greetES() # output "Hola 🎉"
 CodeLet title bar colors can be specified in the URL like so: https://codelet.indri.ai/CodeLet-Gallery/vollib-demo?theme-primary=%235ba94a&theme-secondary=%230a7099
 
 We will be adding the ability to change the watermark logo in the lower right corner in the near future.
+
+<span style="display:none;">{CODELET_APP_DOMAIN}</span>
