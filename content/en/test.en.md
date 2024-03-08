@@ -1,6 +1,6 @@
 # Test file
 
-<p>{CODELET_APP_DOMAIN}</p>
+<span style="display:none;">{CODELET_APP_DOMAIN}</span>
 
 ## List of links
 
