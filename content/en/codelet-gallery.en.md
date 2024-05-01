@@ -23,6 +23,7 @@
 * [Fibonacci TS](https://codelet.indriai.com/CodeLet-Gallery/fibonacci-ts-v2)
 * [TypeScript Load JSON](https://codelet.indriai.com/CodeLet-Gallery/ts-load-json)
 * [TypeScript Ask](https://codelet.indriai.com/CodeLet-Gallery/ts-ask)
+* [TypeScript Web Component][https://github.com/IndriAI/public-docs/blob/main/content/en/codelet-gallery.en.md?plain=1] *Beta*
 
 ## Kotlin \(beta\) Examples
 
